@@ -1,11 +1,18 @@
 <template>
   <div>
+    <!-- 头部组件 -->
+    <page-header/>
     <Nuxt />
+    <!-- 底部组件 -->
+    <page-footer/>
   </div>
 </template>
 
 <script>
+import PageFooter from '../components/PageFooter.vue'
+import PageHeader from '../components/PageHeader.vue'
 export default {
+  components: { PageHeader, PageFooter },
 
 }
 </script>
